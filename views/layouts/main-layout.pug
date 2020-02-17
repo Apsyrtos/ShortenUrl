@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/main-layout.css")
+        title ShortUrl
+        block styles
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item(class=(path==='/' ? 'active' : ''))
+                        a(href="/") Shorten Url
+                    li.main-header__item(class=(path==='/check' ? 'active' : ''))
+                        a(href="/") Check Url
+        block content
